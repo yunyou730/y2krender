@@ -13,10 +13,15 @@ public:
     
     void SetScene(Scene* scene);
     
+    virtual float GetDeltaTime() override { return _deltaTime; }
+    void SetDeltaTime(float deltaTime) { _deltaTime = deltaTime;}
+    
 protected:
     int     _width = 0;
     int     _height = 0;
     Scene*  _scene = nullptr;
+    
+    float   _deltaTime = 0.0f;
     
 };
 
