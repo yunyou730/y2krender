@@ -2,10 +2,12 @@
 #include <glad/glad.h>
 #include "Scene.h"
 #include "core/CoreUtils.h"
+#include "platform/Platform.h"
 
-Y2K::Y2K(int width,int height)
+Y2K::Y2K(int width,int height,ayy::Platform* platform)
     :_width(width)
     ,_height(height)
+    ,_platform(platform)
 {
     
 }
@@ -46,3 +48,9 @@ void Y2K::SetScene(Scene* scene)
     _scene = scene;
     _scene->OnEnter();
 }
+
+ayy::Platform* Y2K::GetPlatform()
+{
+    return nullptr;
+}
+

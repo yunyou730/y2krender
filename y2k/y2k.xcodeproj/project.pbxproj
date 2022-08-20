@@ -18,6 +18,8 @@
 		2B7211F928B0BD3100295BDF /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B7211F828B0BD3100295BDF /* Scene.cpp */; };
 		2B7211FE28B0C07100295BDF /* RenderEnv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B7211FC28B0C07100295BDF /* RenderEnv.cpp */; };
 		2B72120328B0D8B000295BDF /* CoreUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B72120228B0D8B000295BDF /* CoreUtils.cpp */; };
+		2B72121328B13A0100295BDF /* Platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B72121128B13A0100295BDF /* Platform.cpp */; };
+		2B72121C28B13FDF00295BDF /* PlatformMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B72121B28B13FDF00295BDF /* PlatformMac.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +58,10 @@
 		2B7211FD28B0C07100295BDF /* RenderEnv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderEnv.h; sourceTree = "<group>"; };
 		2B72120228B0D8B000295BDF /* CoreUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CoreUtils.cpp; sourceTree = "<group>"; };
 		2B72120728B0D8C300295BDF /* CoreUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreUtils.h; sourceTree = "<group>"; };
+		2B72121128B13A0100295BDF /* Platform.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Platform.cpp; sourceTree = "<group>"; };
+		2B72121228B13A0100295BDF /* Platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Platform.h; sourceTree = "<group>"; };
+		2B72121A28B13FDF00295BDF /* PlatformMac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformMac.h; sourceTree = "<group>"; };
+		2B72121B28B13FDF00295BDF /* PlatformMac.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlatformMac.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,14 +100,10 @@
 		2B7211B928B0AC4200295BDF /* y2k */ = {
 			isa = PBXGroup;
 			children = (
+				2B72121828B13B0F00295BDF /* platform */,
+				2B72121528B13A5300295BDF /* scene_management */,
 				2B7211E228B0B9DA00295BDF /* showcase */,
 				2B7211BA28B0AC4200295BDF /* main.cpp */,
-				2B7211F828B0BD3100295BDF /* Scene.cpp */,
-				2B7211F728B0BD3100295BDF /* Scene.h */,
-				2B7211EF28B0BBE200295BDF /* Y2K.cpp */,
-				2B7211EE28B0BBE200295BDF /* Y2K.h */,
-				2B7211FC28B0C07100295BDF /* RenderEnv.cpp */,
-				2B7211FD28B0C07100295BDF /* RenderEnv.h */,
 			);
 			path = y2k;
 			sourceTree = "<group>";
@@ -213,9 +215,9 @@
 		2B7211E828B0BA3D00295BDF /* ayy */ = {
 			isa = PBXGroup;
 			children = (
-				2B72120028B0D88A00295BDF /* core */,
 				2B7211E928B0BB3900295BDF /* Application.cpp */,
 				2B7211EA28B0BB3900295BDF /* Application.h */,
+				2B72120028B0D88A00295BDF /* core */,
 				2B7211F428B0BC4700295BDF /* platform */,
 				2B7211F328B0BC3A00295BDF /* render */,
 			);
@@ -232,6 +234,8 @@
 		2B7211F428B0BC4700295BDF /* platform */ = {
 			isa = PBXGroup;
 			children = (
+				2B72121128B13A0100295BDF /* Platform.cpp */,
+				2B72121228B13A0100295BDF /* Platform.h */,
 			);
 			path = platform;
 			sourceTree = "<group>";
@@ -243,6 +247,28 @@
 				2B72120228B0D8B000295BDF /* CoreUtils.cpp */,
 			);
 			path = core;
+			sourceTree = "<group>";
+		};
+		2B72121528B13A5300295BDF /* scene_management */ = {
+			isa = PBXGroup;
+			children = (
+				2B7211F828B0BD3100295BDF /* Scene.cpp */,
+				2B7211F728B0BD3100295BDF /* Scene.h */,
+				2B7211EF28B0BBE200295BDF /* Y2K.cpp */,
+				2B7211EE28B0BBE200295BDF /* Y2K.h */,
+			);
+			path = scene_management;
+			sourceTree = "<group>";
+		};
+		2B72121828B13B0F00295BDF /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				2B72121B28B13FDF00295BDF /* PlatformMac.cpp */,
+				2B72121A28B13FDF00295BDF /* PlatformMac.h */,
+				2B7211FC28B0C07100295BDF /* RenderEnv.cpp */,
+				2B7211FD28B0C07100295BDF /* RenderEnv.h */,
+			);
+			path = platform;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,11 +329,13 @@
 			files = (
 				2B72120328B0D8B000295BDF /* CoreUtils.cpp in Sources */,
 				2B7211FE28B0C07100295BDF /* RenderEnv.cpp in Sources */,
+				2B72121C28B13FDF00295BDF /* PlatformMac.cpp in Sources */,
 				2B7211F928B0BD3100295BDF /* Scene.cpp in Sources */,
 				2B7211EB28B0BB3900295BDF /* Application.cpp in Sources */,
 				2B7211BB28B0AC4200295BDF /* main.cpp in Sources */,
 				2B7211F028B0BBE200295BDF /* Y2K.cpp in Sources */,
 				2B7211E528B0B9EB00295BDF /* Showcase1.cpp in Sources */,
+				2B72121328B13A0100295BDF /* Platform.cpp in Sources */,
 				2B7211D328B0B10F00295BDF /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +464,7 @@
 					3rd/glad/include,
 					"3rd/glfw-3.3.4/include",
 					ayy,
+					y2k,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +485,7 @@
 					3rd/glad/include,
 					"3rd/glfw-3.3.4/include",
 					ayy,
+					y2k,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

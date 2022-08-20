@@ -1,7 +1,10 @@
 #pragma once
 
-#include "../Scene.h"
+#include "scene_management/Scene.h"
 
+/*
+ Display with VAO & VBO
+ */
 class Showcase1 : public Scene
 {
 public:
@@ -11,5 +14,8 @@ public:
     virtual void OnExit() override;
     virtual void OnUpdate() override;
     virtual void OnRender() override;
+    
+protected:
+    
 };
 
