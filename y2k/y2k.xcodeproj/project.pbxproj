@@ -21,17 +21,23 @@
 		2B72121328B13A0100295BDF /* Platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B72121128B13A0100295BDF /* Platform.cpp */; };
 		2B72121C28B13FDF00295BDF /* PlatformMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B72121B28B13FDF00295BDF /* PlatformMac.cpp */; };
 		2B72122328B1FB5300295BDF /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B72122128B1FB5300295BDF /* ShaderProgram.cpp */; };
+		2B72123028B2648F00295BDF /* Showcase2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B72122E28B2648F00295BDF /* Showcase2.cpp */; };
+		2B962E4D28B266A8002FD9EC /* IO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B962E4B28B266A8002FD9EC /* IO.cpp */; };
+		2B962E5428B289DE002FD9EC /* test.fsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B962E5228B289D5002FD9EC /* test.fsh */; };
+		2B962E5528B289DE002FD9EC /* test.vsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B962E5328B289D5002FD9EC /* test.vsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		2B7211B528B0AC4200295BDF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = assets/showcase2;
+			dstSubfolderSpec = 16;
 			files = (
+				2B962E5428B289DE002FD9EC /* test.fsh in CopyFiles */,
+				2B962E5528B289DE002FD9EC /* test.vsh in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -65,6 +71,12 @@
 		2B72121B28B13FDF00295BDF /* PlatformMac.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlatformMac.cpp; sourceTree = "<group>"; };
 		2B72122128B1FB5300295BDF /* ShaderProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderProgram.cpp; sourceTree = "<group>"; };
 		2B72122228B1FB5300295BDF /* ShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderProgram.h; sourceTree = "<group>"; };
+		2B72122E28B2648F00295BDF /* Showcase2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Showcase2.cpp; sourceTree = "<group>"; };
+		2B72122F28B2648F00295BDF /* Showcase2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Showcase2.h; sourceTree = "<group>"; };
+		2B962E4B28B266A8002FD9EC /* IO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IO.cpp; sourceTree = "<group>"; };
+		2B962E4C28B266A8002FD9EC /* IO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IO.h; sourceTree = "<group>"; };
+		2B962E5228B289D5002FD9EC /* test.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = test.fsh; sourceTree = "<group>"; };
+		2B962E5328B289D5002FD9EC /* test.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = test.vsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +99,7 @@
 				2B7211C228B0B10500295BDF /* 3rd */,
 				2B7211E828B0BA3D00295BDF /* ayy */,
 				2B7211B928B0AC4200295BDF /* y2k */,
+				2B962E4F28B26C69002FD9EC /* assets */,
 				2B7211B828B0AC4200295BDF /* Products */,
 				2B7211D628B0B1A000295BDF /* Frameworks */,
 			);
@@ -214,6 +227,8 @@
 			children = (
 				2B7211E328B0B9EB00295BDF /* Showcase1.cpp */,
 				2B7211E428B0B9EB00295BDF /* Showcase1.h */,
+				2B72122E28B2648F00295BDF /* Showcase2.cpp */,
+				2B72122F28B2648F00295BDF /* Showcase2.h */,
 			);
 			path = showcase;
 			sourceTree = "<group>";
@@ -253,6 +268,8 @@
 			children = (
 				2B72120728B0D8C300295BDF /* CoreUtils.h */,
 				2B72120228B0D8B000295BDF /* CoreUtils.cpp */,
+				2B962E4B28B266A8002FD9EC /* IO.cpp */,
+				2B962E4C28B266A8002FD9EC /* IO.h */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -298,6 +315,23 @@
 				2B72122228B1FB5300295BDF /* ShaderProgram.h */,
 			);
 			path = resources;
+			sourceTree = "<group>";
+		};
+		2B962E4F28B26C69002FD9EC /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				2B962E5128B289D5002FD9EC /* showcase2 */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		2B962E5128B289D5002FD9EC /* showcase2 */ = {
+			isa = PBXGroup;
+			children = (
+				2B962E5228B289D5002FD9EC /* test.fsh */,
+				2B962E5328B289D5002FD9EC /* test.vsh */,
+			);
+			path = showcase2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,7 +390,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B962E4D28B266A8002FD9EC /* IO.cpp in Sources */,
 				2B72120328B0D8B000295BDF /* CoreUtils.cpp in Sources */,
+				2B72123028B2648F00295BDF /* Showcase2.cpp in Sources */,
 				2B7211FE28B0C07100295BDF /* RenderEnv.cpp in Sources */,
 				2B72121C28B13FDF00295BDF /* PlatformMac.cpp in Sources */,
 				2B7211F928B0BD3100295BDF /* Scene.cpp in Sources */,

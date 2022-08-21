@@ -4,3 +4,8 @@
 
 #define NS_AYY_BEGIN
 #define NS_AYY_END
+
+
+namespace ayy {
+
+}
