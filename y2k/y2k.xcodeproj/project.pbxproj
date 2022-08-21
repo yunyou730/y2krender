@@ -103,9 +103,10 @@
 		2B7211B928B0AC4200295BDF /* y2k */ = {
 			isa = PBXGroup;
 			children = (
+				2B7211E228B0B9DA00295BDF /* showcase */,
 				2B72121828B13B0F00295BDF /* platform */,
 				2B72121528B13A5300295BDF /* scene_management */,
-				2B7211E228B0B9DA00295BDF /* showcase */,
+				2B72122928B2150600295BDF /* resources */,
 				2B7211BA28B0AC4200295BDF /* main.cpp */,
 			);
 			path = y2k;
@@ -222,6 +223,7 @@
 				2B7211EA28B0BB3900295BDF /* Application.h */,
 				2B72122628B1FD0200295BDF /* features */,
 				2B7211F328B0BC3A00295BDF /* render */,
+				2B72122B28B2175800295BDF /* resources */,
 				2B7211F428B0BC4700295BDF /* platform */,
 				2B72120028B0D88A00295BDF /* core */,
 			);
@@ -231,8 +233,6 @@
 		2B7211F328B0BC3A00295BDF /* render */ = {
 			isa = PBXGroup;
 			children = (
-				2B72122128B1FB5300295BDF /* ShaderProgram.cpp */,
-				2B72122228B1FB5300295BDF /* ShaderProgram.h */,
 			);
 			path = render;
 			sourceTree = "<group>";
@@ -282,6 +282,22 @@
 			children = (
 			);
 			path = features;
+			sourceTree = "<group>";
+		};
+		2B72122928B2150600295BDF /* resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		2B72122B28B2175800295BDF /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				2B72122128B1FB5300295BDF /* ShaderProgram.cpp */,
+				2B72122228B1FB5300295BDF /* ShaderProgram.h */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

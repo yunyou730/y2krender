@@ -2,6 +2,8 @@
 #include "Y2K.h"
 #include "platform/PlatformMac.h"
 
+#include "showcase/Showcase1.h"
+
 const int kScreenWidth = 400;
 const int kScreenHeight = 300;
 
@@ -15,6 +17,9 @@ int main(int argc, const char * argv[])
     
     Y2K app(kScreenWidth,kScreenHeight,&platform);
     app.Initialize();
+    
+    Scene* showcase = new Showcase1();
+    app.SetScene(showcase);
     
     while(!env.ShouldClose())
     {

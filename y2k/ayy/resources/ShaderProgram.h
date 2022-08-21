@@ -14,6 +14,8 @@ public:
     bool Initilaize(const std::string& vertSource,const std::string& fragSource);
     void Deinitialize();
     
+    GLuint GetProgram() const { return _program;}
+    
 protected:
     bool compileVert(GLuint& vertShader,const std::string& vertSource,char* infoLog);
     bool compileFrag(GLuint& fragShader,const std::string& fragSource,char* infoLog);
