@@ -4,9 +4,8 @@
 #include <glad/glad.h>
 
 /*
- Display with VAO & VBO
- */
-
+Display a triangle with basical VAO and VBO
+*/
 namespace ayy {
 class ShaderProgram;
 }

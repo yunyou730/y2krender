@@ -108,6 +108,8 @@
 				2B72121528B13A5300295BDF /* scene_management */,
 				2B72122928B2150600295BDF /* resources */,
 				2B7211BA28B0AC4200295BDF /* main.cpp */,
+				2B7211EF28B0BBE200295BDF /* Y2K.cpp */,
+				2B7211EE28B0BBE200295BDF /* Y2K.h */,
 			);
 			path = y2k;
 			sourceTree = "<group>";
@@ -260,8 +262,6 @@
 			children = (
 				2B7211F828B0BD3100295BDF /* Scene.cpp */,
 				2B7211F728B0BD3100295BDF /* Scene.h */,
-				2B7211EF28B0BBE200295BDF /* Y2K.cpp */,
-				2B7211EE28B0BBE200295BDF /* Y2K.h */,
 			);
 			path = scene_management;
 			sourceTree = "<group>";
