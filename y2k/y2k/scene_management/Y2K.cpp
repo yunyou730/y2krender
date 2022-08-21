@@ -19,7 +19,8 @@ Y2K::~Y2K()
 
 void Y2K::Initialize()
 {
-    glViewport(0,0,_width,_height);
+    // if call here , the viewport shall be small. Don't call it
+//    glViewport(0,0,_width,_height);
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 }
 
@@ -34,7 +35,8 @@ void Y2K::Update()
     
     if(_scene != nullptr)
     {
-        
+        _scene->OnUpdate();
+        _scene->OnRender();
     }
 }
 

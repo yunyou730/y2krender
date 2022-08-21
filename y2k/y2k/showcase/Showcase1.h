@@ -21,7 +21,7 @@ public:
     virtual void OnRender() override;
     
 protected:
-    void PrepareVAO();
+    void PrepareVAO(GLuint& VAO,GLuint& VBO);
     void PrepareShader();
     void Cleanup();
     

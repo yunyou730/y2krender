@@ -2,13 +2,13 @@
 
 #include <iostream>
 
-void framebuffer_size_callback(GLFWwindow* window,int width,int height)
+static void framebuffer_size_callback(GLFWwindow* window,int width,int height)
 {
     glViewport(0,0,width,height);
     printf("%d,%d\n",width,height);
 }
 
-void processInput(GLFWwindow *window)
+static void processInput(GLFWwindow *window)
 {
     if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
@@ -50,6 +50,7 @@ void RenderEnv::Initialize()
     }
     
     glfwSetFramebufferSizeCallback(_window,framebuffer_size_callback);
+    
 }
 
 void RenderEnv::Deinitialize()
