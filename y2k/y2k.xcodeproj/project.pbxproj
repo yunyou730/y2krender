@@ -20,6 +20,7 @@
 		2B72120328B0D8B000295BDF /* CoreUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B72120228B0D8B000295BDF /* CoreUtils.cpp */; };
 		2B72121328B13A0100295BDF /* Platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B72121128B13A0100295BDF /* Platform.cpp */; };
 		2B72121C28B13FDF00295BDF /* PlatformMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B72121B28B13FDF00295BDF /* PlatformMac.cpp */; };
+		2B72122328B1FB5300295BDF /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B72122128B1FB5300295BDF /* ShaderProgram.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +63,8 @@
 		2B72121228B13A0100295BDF /* Platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Platform.h; sourceTree = "<group>"; };
 		2B72121A28B13FDF00295BDF /* PlatformMac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformMac.h; sourceTree = "<group>"; };
 		2B72121B28B13FDF00295BDF /* PlatformMac.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlatformMac.cpp; sourceTree = "<group>"; };
+		2B72122128B1FB5300295BDF /* ShaderProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderProgram.cpp; sourceTree = "<group>"; };
+		2B72122228B1FB5300295BDF /* ShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderProgram.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,9 +220,10 @@
 			children = (
 				2B7211E928B0BB3900295BDF /* Application.cpp */,
 				2B7211EA28B0BB3900295BDF /* Application.h */,
-				2B72120028B0D88A00295BDF /* core */,
-				2B7211F428B0BC4700295BDF /* platform */,
+				2B72122628B1FD0200295BDF /* features */,
 				2B7211F328B0BC3A00295BDF /* render */,
+				2B7211F428B0BC4700295BDF /* platform */,
+				2B72120028B0D88A00295BDF /* core */,
 			);
 			path = ayy;
 			sourceTree = "<group>";
@@ -227,6 +231,8 @@
 		2B7211F328B0BC3A00295BDF /* render */ = {
 			isa = PBXGroup;
 			children = (
+				2B72122128B1FB5300295BDF /* ShaderProgram.cpp */,
+				2B72122228B1FB5300295BDF /* ShaderProgram.h */,
 			);
 			path = render;
 			sourceTree = "<group>";
@@ -269,6 +275,13 @@
 				2B7211FD28B0C07100295BDF /* RenderEnv.h */,
 			);
 			path = platform;
+			sourceTree = "<group>";
+		};
+		2B72122628B1FD0200295BDF /* features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +348,7 @@
 				2B7211BB28B0AC4200295BDF /* main.cpp in Sources */,
 				2B7211F028B0BBE200295BDF /* Y2K.cpp in Sources */,
 				2B7211E528B0B9EB00295BDF /* Showcase1.cpp in Sources */,
+				2B72122328B1FB5300295BDF /* ShaderProgram.cpp in Sources */,
 				2B72121328B13A0100295BDF /* Platform.cpp in Sources */,
 				2B7211D328B0B10F00295BDF /* glad.c in Sources */,
 			);
