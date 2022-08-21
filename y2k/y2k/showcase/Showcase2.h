@@ -4,7 +4,8 @@
 #include <glad/glad.h>
 
 /*
-
+ Shader source code from asset file;
+ Add aColor attribute for each vertex
 */
 namespace ayy {
 class ShaderProgram;
