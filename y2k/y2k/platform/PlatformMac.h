@@ -9,4 +9,6 @@ public:
     virtual void Deinitialize() override;
     
     virtual std::string GetResRootDirectory() override;
+    
+    double GetCurrentTimeStamp() const;
 };

@@ -6,7 +6,8 @@ class Platform;
 class Application
 {
 public:
-    virtual ~Application() {}
+    Application();
+    virtual ~Application();
     
     virtual void Initialize() = 0;
     virtual void Deinitialize() = 0;

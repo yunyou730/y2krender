@@ -4,9 +4,10 @@
 
 #include "showcase/Showcase1.h"
 #include "showcase/Showcase2.h"
+#include "showcase/Showcase3.h"
 
 const int kScreenWidth = 400;
-const int kScreenHeight = 300;
+const int kScreenHeight = 400;
 
 int main(int argc, const char * argv[])
 {    
@@ -19,11 +20,17 @@ int main(int argc, const char * argv[])
     Y2K app(kScreenWidth,kScreenHeight,&platform);
     app.Initialize();
     
-    Scene* showcase = new Showcase2();
+    Scene* showcase = new Showcase3();
     app.SetScene(showcase);
     
+    double prevTime = platform.GetCurrentTimeStamp();
     while(!env.ShouldClose())
     {
+        double currentTime = platform.GetCurrentTimeStamp();
+        float deltaTime = currentTime - prevTime;
+        prevTime = currentTime;
+        app.SetDeltaTime(deltaTime);
+        
         env.FrameBegin();
         app.Update();
         env.FrameEnd();

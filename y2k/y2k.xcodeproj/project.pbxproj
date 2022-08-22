@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B34354628B3CE1500FCE757 /* Showcase3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B34354528B3CE1500FCE757 /* Showcase3.cpp */; };
+		2B34354C28B3CE6000FCE757 /* test.fsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B34354928B3CE4400FCE757 /* test.fsh */; };
+		2B34354E28B3CE6200FCE757 /* test.vsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B34354A28B3CE4400FCE757 /* test.vsh */; };
+		2B34355328B3D68C00FCE757 /* TransformComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B34355128B3D68C00FCE757 /* TransformComponent.cpp */; };
+		2B34355828B3D6CC00FCE757 /* BaseComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B34355728B3D6CC00FCE757 /* BaseComponent.cpp */; };
 		2B7211BB28B0AC4200295BDF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B7211BA28B0AC4200295BDF /* main.cpp */; };
 		2B7211D328B0B10F00295BDF /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B7211D228B0B10500295BDF /* glad.c */; };
 		2B7211D728B0B1A000295BDF /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7211C528B0B10500295BDF /* libglfw3.a */; };
@@ -31,6 +36,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2B34354B28B3CE5400FCE757 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = assets/showcase3;
+			dstSubfolderSpec = 16;
+			files = (
+				2B34354C28B3CE6000FCE757 /* test.fsh in CopyFiles */,
+				2B34354E28B3CE6200FCE757 /* test.vsh in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2B7211B528B0AC4200295BDF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -45,6 +61,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B34354428B3CE1500FCE757 /* Showcase3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Showcase3.h; sourceTree = "<group>"; };
+		2B34354528B3CE1500FCE757 /* Showcase3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Showcase3.cpp; sourceTree = "<group>"; };
+		2B34354928B3CE4400FCE757 /* test.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = test.fsh; sourceTree = "<group>"; };
+		2B34354A28B3CE4400FCE757 /* test.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = test.vsh; sourceTree = "<group>"; };
+		2B34355128B3D68C00FCE757 /* TransformComponent.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TransformComponent.cpp; sourceTree = "<group>"; };
+		2B34355228B3D68C00FCE757 /* TransformComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransformComponent.h; sourceTree = "<group>"; };
+		2B34355628B3D6CC00FCE757 /* BaseComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseComponent.h; sourceTree = "<group>"; };
+		2B34355728B3D6CC00FCE757 /* BaseComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseComponent.cpp; sourceTree = "<group>"; };
 		2B7211B728B0AC4200295BDF /* y2k */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = y2k; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B7211BA28B0AC4200295BDF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		2B7211C528B0B10500295BDF /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libglfw3.a; sourceTree = "<group>"; };
@@ -354,6 +378,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B34354828B3CE4400FCE757 /* showcase3 */ = {
+			isa = PBXGroup;
+			children = (
+				2B34354928B3CE4400FCE757 /* test.fsh */,
+				2B34354A28B3CE4400FCE757 /* test.vsh */,
+			);
+			path = showcase3;
+			sourceTree = "<group>";
+		};
+		2B34355028B3D67900FCE757 /* component */ = {
+			isa = PBXGroup;
+			children = (
+				2B34355728B3D6CC00FCE757 /* BaseComponent.cpp */,
+				2B34355628B3D6CC00FCE757 /* BaseComponent.h */,
+				2B34355128B3D68C00FCE757 /* TransformComponent.cpp */,
+				2B34355228B3D68C00FCE757 /* TransformComponent.h */,
+			);
+			path = component;
+			sourceTree = "<group>";
+		};
 		2B7211AE28B0AC4200295BDF = {
 			isa = PBXGroup;
 			children = (
@@ -491,6 +535,8 @@
 				2B7211E428B0B9EB00295BDF /* Showcase1.h */,
 				2B72122E28B2648F00295BDF /* Showcase2.cpp */,
 				2B72122F28B2648F00295BDF /* Showcase2.h */,
+				2B34354528B3CE1500FCE757 /* Showcase3.cpp */,
+				2B34354428B3CE1500FCE757 /* Showcase3.h */,
 			);
 			path = showcase;
 			sourceTree = "<group>";
@@ -539,6 +585,7 @@
 		2B72121528B13A5300295BDF /* scene_management */ = {
 			isa = PBXGroup;
 			children = (
+				2B34355028B3D67900FCE757 /* component */,
 				2B7211F828B0BD3100295BDF /* Scene.cpp */,
 				2B7211F728B0BD3100295BDF /* Scene.h */,
 			);
@@ -582,6 +629,7 @@
 		2B962E4F28B26C69002FD9EC /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				2B34354828B3CE4400FCE757 /* showcase3 */,
 				2B962E5128B289D5002FD9EC /* showcase2 */,
 			);
 			path = assets;
@@ -903,6 +951,7 @@
 				2B7211B328B0AC4200295BDF /* Sources */,
 				2B7211B428B0AC4200295BDF /* Frameworks */,
 				2B7211B528B0AC4200295BDF /* CopyFiles */,
+				2B34354B28B3CE5400FCE757 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -953,12 +1002,15 @@
 				2B72120328B0D8B000295BDF /* CoreUtils.cpp in Sources */,
 				2B72123028B2648F00295BDF /* Showcase2.cpp in Sources */,
 				2B7211FE28B0C07100295BDF /* RenderEnv.cpp in Sources */,
+				2B34355328B3D68C00FCE757 /* TransformComponent.cpp in Sources */,
 				2B72121C28B13FDF00295BDF /* PlatformMac.cpp in Sources */,
 				2B7211F928B0BD3100295BDF /* Scene.cpp in Sources */,
 				2B7211EB28B0BB3900295BDF /* Application.cpp in Sources */,
+				2B34354628B3CE1500FCE757 /* Showcase3.cpp in Sources */,
 				2B7211BB28B0AC4200295BDF /* main.cpp in Sources */,
 				2B962F6228B2978A002FD9EC /* glm.cpp in Sources */,
 				2B7211F028B0BBE200295BDF /* Y2K.cpp in Sources */,
+				2B34355828B3D6CC00FCE757 /* BaseComponent.cpp in Sources */,
 				2B7211E528B0B9EB00295BDF /* Showcase1.cpp in Sources */,
 				2B72122328B1FB5300295BDF /* ShaderProgram.cpp in Sources */,
 				2B72121328B13A0100295BDF /* Platform.cpp in Sources */,
